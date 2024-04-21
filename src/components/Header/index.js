@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Header() {
-  return <div>Header</div>;
+export default function Header({ title, align }) {
+  return <div style={{ textAlign: { align } }}>{title}</div>;
 }
