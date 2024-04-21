@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <div>Sumant Portfolio</div>;
+  return <div>Portfolio</div>;
 }
 
 export default App;
