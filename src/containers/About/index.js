@@ -3,8 +3,7 @@ import Passion from "../../components/Passion";
 
 export default function About() {
   return (
-    <>
-      <header>{/* NAV COMPONENT */}</header>
+    <div>
       <main>
         {/* PASSION COMPONENT */}
         <Passion
@@ -20,7 +19,6 @@ export default function About() {
           }
         />
       </main>
-      <footer>{/* FOOTER COMPONENT */}</footer>
-    </>
+    </div>
   );
 }

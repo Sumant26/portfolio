@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import "./index.css";
 
 export default function Footer() {
   const handleGithubClick = () => {
@@ -16,8 +17,7 @@ export default function Footer() {
     console.log("GitHub icon clicked");
   };
   return (
-    <div style={{ textAlign: "center" }}>
-      <hr />
+    <div className="footer" style={{ textAlign: "center" }}>
       <span>
         <FontAwesomeIcon icon={faLinkedinIn} onClick={handleLinkedInClick} />
         <FontAwesomeIcon

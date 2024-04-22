@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Passion({ title, description }) {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="container" style={{ textAlign: "center" }}>
       <h2
         style={{
           whiteSpace: "discard-inner",
