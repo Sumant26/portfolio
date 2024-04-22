@@ -1,15 +1,11 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+
 import { Formik } from "formik";
 
 export default function Contact() {
   return (
     <>
-      <header>
-        {/* NAV COMPONENT */}
-        <Navbar />
-      </header>
+      <header>{/* NAV COMPONENT */}</header>
       <main style={{ textAlign: "center", margin: "11px 0" }}>
         {/* HEADER COMPONENT */}
         {/* FORM  */}
@@ -125,10 +121,7 @@ export default function Contact() {
           .
         </p>
       </main>
-      <footer>
-        {/* FOOTER COMPONENT */}
-        <Footer />
-      </footer>
+      <footer>{/* FOOTER COMPONENT */}</footer>
     </>
   );
 }

@@ -1,15 +1,11 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+
 import Header from "../../components/Header";
 
 export default function Home() {
   return (
     <>
-      <header>
-        {/* NAV COMPONENT */}
-        <Navbar />
-      </header>
+      <header>{/* NAV COMPONENT */}</header>
       <main>
         {/* HEADER COMPONENT */}
         {/* TILE COMPONENT */}
@@ -19,10 +15,7 @@ My recent work can be viewed here."
           align={"center"}
         />
       </main>
-      <footer>
-        {/* FOOTER COMPONENT */}
-        <Footer />
-      </footer>
+      <footer>{/* FOOTER COMPONENT */}</footer>
     </>
   );
 }
