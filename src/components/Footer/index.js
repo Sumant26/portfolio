@@ -26,13 +26,22 @@ export default function Footer() {
   return (
     <div className="footer">
       <span>
-        <FontAwesomeIcon icon={faLinkedinIn} onClick={handleLinkedInClick} />
         <FontAwesomeIcon
+          className="fontAwesomeIcon"
+          icon={faLinkedinIn}
+          onClick={handleLinkedInClick}
+        />
+        <FontAwesomeIcon
+          className="fontAwesomeIcon"
           style={{ padding: "0 12px" }}
           icon={faGithub}
           onClick={handleGithubClick}
         />
-        <FontAwesomeIcon icon={faEnvelope} onClick={handleMailClick} />
+        <FontAwesomeIcon
+          className="fontAwesomeIcon"
+          icon={faEnvelope}
+          onClick={handleMailClick}
+        />
       </span>
     </div>
   );
