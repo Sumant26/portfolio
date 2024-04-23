@@ -12,10 +12,17 @@ export default function Footer() {
   };
 
   const handleLinkedInClick = () => {
-    // Your logic for handling GitHub icon click
+    // Your logic for handling LinkedIn icon click
     window.open("https://www.linkedin.com/in/sumant-tulshibagwale/", "_blank");
-    console.log("GitHub icon clicked");
+    console.log("LinkedIn icon clicked");
   };
+
+  const handleMailClick = () => {
+    // Your logic for handling Mail icon click
+    window.open("mailto:sumanttulshibagwale@gmail.com", "_blank");
+    console.log("Mail icon clicked");
+  };
+
   return (
     <div className="footer" style={{ textAlign: "center" }}>
       <span>
@@ -25,7 +32,7 @@ export default function Footer() {
           icon={faGithub}
           onClick={handleGithubClick}
         />
-        <FontAwesomeIcon icon={faEnvelope} onClick={handleGithubClick} />
+        <FontAwesomeIcon icon={faEnvelope} onClick={handleMailClick} />
       </span>
     </div>
   );

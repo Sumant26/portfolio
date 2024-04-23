@@ -1,5 +1,27 @@
-.container{
+.passion{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
+.h2{
+    white-space: discard-inner;
+    width: 300px;
+    text-align: inherit;
+    font-size: 30px;
+    font-weight: inherit;
+}
+
+@media screen and (min-width: 480px){
+    .p{
+        white-space: discard-inner;
+        width: 500px;
+        text-align: left;
+        font-size: 20px;
+        color: grey,
+    }
+}
+
+

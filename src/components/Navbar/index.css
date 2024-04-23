@@ -2,3 +2,16 @@
     display: flex;
     justify-content: space-between;
 }
+
+.spanName{
+    font-size: 14px;
+}
+
+.spanOptions{
+    font-size: 11px;
+     color: grey;
+}
+
+.spanAbout{
+    padding: 0 12px;
+}
