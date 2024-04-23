@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="footer" style={{ textAlign: "center" }}>
+    <div className="footer">
       <span>
         <FontAwesomeIcon icon={faLinkedinIn} onClick={handleLinkedInClick} />
         <FontAwesomeIcon

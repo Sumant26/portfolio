@@ -1,10 +1,12 @@
 .navbar{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .spanName{
     font-size: 14px;
+    
 }
 
 .spanOptions{
