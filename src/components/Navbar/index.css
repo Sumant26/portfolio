@@ -1,19 +1,26 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    cursor: pointer;
+    
 }
 
 .spanName{
     font-size: 14px;
+    cursor: default;
     
 }
 
 .spanOptions{
     font-size: 11px;
      color: grey;
+     text-decoration: none;
+     cursor: pointer;
 }
 
 .spanAbout{
     padding: 0 12px;
+}
+
+.spanOptions :hover{
+    font-size: 12px;
 }

@@ -19,10 +19,10 @@ export default function Navbar() {
       </span>
       <span>
         <span className="spanOptions">
-          <Link to="/">
+          <Link to="/" className="spanOptions">
             <span>Home</span>
           </Link>
-          <Link to="/About">
+          <Link to="/About" className="spanOptions">
             <span className="spanAbout">About</span>
           </Link>
           <span onClick={handleResumeClick}>Resume</span>
