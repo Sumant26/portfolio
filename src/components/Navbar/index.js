@@ -19,7 +19,7 @@ export default function Navbar() {
       </span>
       <span>
         <span className="spanOptions">
-          <Link to="/Home">
+          <Link to="/">
             <span>Home</span>
           </Link>
           <Link to="/About">

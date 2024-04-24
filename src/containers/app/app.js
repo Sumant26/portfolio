@@ -10,7 +10,7 @@ export default function App() {
     <React.StrictMode>
       <Navbar></Navbar>
       <Routes>
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
       </Routes>
       <Footer></Footer>
