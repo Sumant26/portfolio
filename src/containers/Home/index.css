@@ -15,7 +15,7 @@
 }
 
 .grid-item-1 :hover{
- background-color: lightgrey;
+ background-color: rgb(231, 231, 231);
  transition: width .3s ease-in;
  border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
 }
