@@ -22,16 +22,17 @@ export default function Home() {
                 description="Developed a user registration system using controlled React components where individuals can sign up and create their profiles."
               />
             </div>
-            <div className="grid-item-2">
+            <div className="grid-item-1">
               <Tile
-                title="BGV"
-                description="Developed a user registration system using controlled React components where individuals can sign up and create their profiles."
+                title="Ortho Log Book"
+                description="Developed a user registration system where healthcare professionals can sign up and create profiles."
               />
             </div>
-            <div className="grid-item-2">
+            <div className="grid-item-1">
               <Tile
-                title="BGV"
-                description="Developed a user registration system using controlled React components where individuals can sign up and create their profiles."
+                title="Dentist"
+                description="Designed an easy-to-use interface that guides users through the process of taking and uploading pictures of
+                their teeth."
               />
             </div>
           </div>
