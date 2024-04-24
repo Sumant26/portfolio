@@ -4,11 +4,20 @@
   justify-content: space-around; 
   min-height: 100VH;  
   text-align: center;
-    }
+  }
 
-    .fontAwesomeIcon{
-      cursor: pointer;
-      color: grey;
-    }
+  .fontAwesomeIcon{
+    cursor: pointer;
+    color: lightgrey;
+    /* width: 15px; */
+    /* transition: color 0.5s ease; */
+    transition: all .3s ease-in;
+  }
+   
+  .fontAwesomeIcon :hover{
+     color: grey;
+     width: 100px;
+  }
+
 
  
