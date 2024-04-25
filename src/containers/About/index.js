@@ -8,6 +8,7 @@ export default function About() {
       <main>
         {/* PASSION COMPONENT */}
 
+        <div></div>
         <Passion
           title={"Software Development"}
           description={
