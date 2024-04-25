@@ -28,8 +28,7 @@
       justify-content: center;
       gap: 10px 10px;
       width: 50vw;
-      height: 150vh;
-      /* grid-template-rows:    repeat(4, 100px); */
+      height: 251vh;
       grid-template-columns: repeat(1, 11fr);
       border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
     }
