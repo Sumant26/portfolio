@@ -35,6 +35,18 @@ export default function Home() {
                 their teeth."
               />
             </div>
+            <div className="grid-item-1">
+              <Tile
+                title="Dentist Workflow"
+                description="Developed a dashboard where dentists can view a comprehensive list of their patients using lazy loading."
+              />
+            </div>
+            <div className="grid-item-1">
+              <Tile
+                title="Field"
+                description="Designed an interface to upload and manipulate IFC files using integrated functionalities."
+              />
+            </div>
           </div>
         </div>
       </main>
