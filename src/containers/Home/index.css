@@ -6,6 +6,7 @@
 @media screen and (min-width: 480px){
 .grid-container {
     display: grid;
+    gap: 10px 10px;
     width: 50vw;
     height: 50vh;
     grid-template-rows:    repeat(4, 100px);
@@ -19,5 +20,18 @@
  transition: width .3s ease-in;
  border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
 }
+
+@media screen and (max-width: 480px){
+  .grid-container {
+      display: grid;
+      justify-content: center;
+      gap: 10px 10px;
+      width: 50vw;
+      height: 150vh;
+      /* grid-template-rows:    repeat(4, 100px); */
+      grid-template-columns: repeat(1, 11fr);
+      border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
+    }
+  }
 
 
