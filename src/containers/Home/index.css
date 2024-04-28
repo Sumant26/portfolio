@@ -12,7 +12,7 @@
     grid-template-rows:    repeat(4, 100px);
     grid-template-columns: repeat(3, 11fr);
     border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
-    row-gap: 20vh;
+    row-gap: 110px;
   }
 }
 
@@ -28,7 +28,7 @@
       justify-content: center;
       gap: 10px 10px;
       width: 50vw;
-      height: 251vh;
+      height: 1100px;
       grid-template-columns: repeat(1, 11fr);
       border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
     }
