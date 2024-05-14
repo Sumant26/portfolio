@@ -7,16 +7,16 @@
 }
 
 .h2{
-    width: 300px;
+    /* width: 300px; */
     font-size: 30px;
     font-weight: inherit;
 }
 
 @media screen and (min-width: 480px){
     .p{
-        white-space: discard-inner;
+        /* white-space: discard-inner; */
         
-        width: 500px;
+        /* width: 500px; */
         text-align: center;
         font-size: 20px;
         color: grey !important;
