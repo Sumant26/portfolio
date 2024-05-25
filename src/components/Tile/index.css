@@ -3,7 +3,6 @@
     flex-direction: column;
     text-align: center;
     width: 200px;
-    /* height: 200px; */
     background-color: whitesmoke;
     box-shadow: 2vh 1vh 5vh lightgrey;
     cursor: pointer;
@@ -14,7 +13,6 @@
 .title {
     font-size: 14px;
     text-align: left;
-    /* padding: 15px; */
 }
 
 
@@ -23,5 +21,4 @@
     text-align: left;
     justify-content: center;
     color: grey;
-    /* padding: 0 15px; */
 }

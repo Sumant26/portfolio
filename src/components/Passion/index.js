@@ -6,7 +6,7 @@ import "./index.css";
 //Parameters:
 //
 // {title} - Accepts title.
-// {description} - Builds description.
+// {description} - Accepts description.
 //
 // Example Usage:
 //
