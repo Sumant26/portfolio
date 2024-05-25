@@ -5,6 +5,12 @@ import Footer from "../../components/Footer";
 import Home from "../Home";
 import About from "../About";
 
+// Builds App
+//
+// Example Usage:
+//
+// <App />
+//
 export default function App() {
   return (
     <React.StrictMode>

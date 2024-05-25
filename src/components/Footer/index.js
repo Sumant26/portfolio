@@ -4,19 +4,28 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 
+// Builds Footer
+//
+// Example Usage:
+//
+// <Footer></Footer>
+//
 export default function Footer() {
+  // Function to load GitHub Page
   const handleGithubClick = () => {
     // Your logic for handling GitHub icon click
     window.open("https://github.com/Sumant26", "_blank");
     console.log("GitHub icon clicked");
   };
 
+  // Function to load LinkedIn Page
   const handleLinkedInClick = () => {
     // Your logic for handling LinkedIn icon click
     window.open("https://www.linkedin.com/in/sumant-tulshibagwale/", "_blank");
     console.log("LinkedIn icon clicked");
   };
 
+  // Function to load Email
   const handleMailClick = () => {
     // Your logic for handling Mail icon click
     window.open("mailto:sumanttulshibagwale@gmail.com", "_blank");

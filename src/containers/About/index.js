@@ -2,13 +2,16 @@ import React from "react";
 import Passion from "../../components/Passion";
 import "./index.css";
 
+// Builds About
+//
+// Example Usage:
+//
+// <About />
+//
 export default function About() {
   return (
     <div className="about">
       <main>
-        {/* PASSION COMPONENT */}
-
-        <div></div>
         <Passion
           title={"Software Development"}
           description={

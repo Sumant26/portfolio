@@ -2,7 +2,14 @@ import React from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
 
+// Builds Navbar
+//
+// Example Usage:
+//
+// <Navbar></Navbar>
+//
 export default function Navbar() {
+  // Function to load Resume
   const handleResumeClick = () => {
     // Your logic for handling LinkedIn icon click
     window.open(
