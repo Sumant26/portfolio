@@ -13,7 +13,7 @@ export default function Navbar() {
   const handleResumeClick = () => {
     // Your logic for handling LinkedIn icon click
     window.open(
-      "https://drive.google.com/file/d/1pSZu9APXrVfJYKo5B2o9FlYSRoI5nSq9/view?usp=sharing",
+      "https://drive.google.com/file/d/1moWSy10eMtIaKBSCmD1wW4AJbcYjLQmw/view?usp=sharing",
       "_blank"
     );
     console.log("Resume icon clicked");
