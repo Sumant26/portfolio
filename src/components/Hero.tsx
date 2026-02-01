@@ -35,7 +35,7 @@ export function Hero() {
             </div>
           </motion.div>
 
-          <motion.h1 
+          <motion.h1
             className="text-5xl md:text-7xl mb-6 gradient-text"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -43,8 +43,8 @@ export function Hero() {
           >
             Sumant Tulshibagwale
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -53,7 +53,7 @@ export function Hero() {
             5+ years building scalable mobile applications and backend systems using Flutter, Node.js, and MongoDB
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="flex flex-wrap justify-center gap-4 mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -73,35 +73,27 @@ export function Hero() {
             </a>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="flex flex-wrap justify-center gap-6 mb-12"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <a 
-              href="https://linkedin.com/in/sumant-tulshibagwale" 
-              target="_blank" 
+            <a
+              href="https://linkedin.com/in/sumant-tulshibagwale"
+              target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20 transition-all"
             >
               <Linkedin className="w-5 h-5" />
             </a>
-            <a 
-              href="https://github.com/Sumant26" 
-              target="_blank" 
+            <a
+              href="https://github.com/Sumant26"
+              target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20 transition-all"
             >
               <Github className="w-5 h-5" />
-            </a>
-            <a 
-              href="https://sumant-tulshibagwale.netlify.app/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20 transition-all"
-            >
-              <Globe className="w-5 h-5" />
             </a>
           </motion.div>
 
@@ -110,7 +102,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1 }}
           >
-            <Button 
+            <Button
               onClick={() => scrollToSection("experience")}
               size="lg"
               className="gap-2 bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all"
