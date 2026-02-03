@@ -56,8 +56,8 @@ export function Footer() {
             <h4 className="text-sm uppercase tracking-wider mb-4 text-muted-foreground">Get In Touch</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a 
-                  href="tel:+917875122901" 
+                <a
+                  href="tel:+917875122901"
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                 >
                   <Phone className="w-4 h-4" />
@@ -65,8 +65,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a 
-                  href="mailto:sumanttulshibagwale@gmail.com" 
+                <a
+                  href="mailto:sumanttulshibagwale@gmail.com"
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                 >
                   <Mail className="w-4 h-4" />
@@ -74,31 +74,23 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-            
+
             <div className="flex gap-4 mt-6">
-              <a 
-                href="https://linkedin.com/in/sumant-tulshibagwale" 
-                target="_blank" 
+              <a
+                href="https://linkedin.com/in/sumant-tulshibagwale"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-muted rounded-lg hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20 transition-all"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a 
-                href="https://github.com/Sumant26" 
-                target="_blank" 
+              <a
+                href="https://github.com/Sumant26"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-muted rounded-lg hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20 transition-all"
               >
                 <Github className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://sumant-tulshibagwale.netlify.app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-2 bg-muted rounded-lg hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20 transition-all"
-              >
-                <Globe className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -106,7 +98,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
-            © {new Date().getFullYear()} Sumant Tulshibagwale. Built with 
+            © {new Date().getFullYear()} Sumant Tulshibagwale. Built with
             <Heart className="w-4 h-4 fill-current" />
             using React & Tailwind CSS
           </p>
@@ -118,13 +110,13 @@ export function Footer() {
 
 function MapPin({ className }: { className?: string }) {
   return (
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      viewBox="0 0 24 24" 
-      fill="none" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
     >
