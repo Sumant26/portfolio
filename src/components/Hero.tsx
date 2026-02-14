@@ -19,7 +19,7 @@ export function Hero() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf"; // MUST be inside public folder
+    link.href = "/Sumant Tulshibagwale.pdf"; // MUST be inside public folder
     link.download = "Sumant_Tulshibagwale_Resume.pdf";
     document.body.appendChild(link);
     link.click();
