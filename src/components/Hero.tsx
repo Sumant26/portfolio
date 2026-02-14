@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Mail, Phone, MapPin, Linkedin, Github, Globe, ArrowDown } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, ArrowDown, Download } from "lucide-react";
 import { Button } from "./ui/button";
 
 export function Hero() {
@@ -10,9 +10,18 @@ export function Hero() {
     }
   };
 
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/resume.pdf"; // Make sure resume.pdf is inside /public
+    link.download = "Sumant_Tulshibagwale_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-background to-muted/30">
-      {/* Subtle background decoration */}
+      {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -left-48 w-96 h-96 bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-violet-500/5 dark:bg-violet-500/10 rounded-full blur-3xl" />
@@ -31,7 +40,9 @@ export function Hero() {
             className="mb-6"
           >
             <div className="inline-block px-4 py-2 bg-primary/10 dark:bg-primary/20 border border-primary/20 rounded-full backdrop-blur-sm">
-              <span className="text-sm text-primary">Flutter & Backend-Focused Software Developer</span>
+              <span className="text-sm text-primary">
+                Flutter & Backend-Focused Software Developer
+              </span>
             </div>
           </motion.div>
 
@@ -53,6 +64,7 @@ export function Hero() {
             5+ years building scalable mobile applications and backend systems using Flutter, Node.js, and MongoDB
           </motion.p>
 
+          {/* Contact Buttons */}
           <motion.div
             className="flex flex-wrap justify-center gap-4 mb-8"
             initial={{ opacity: 0, y: 20 }}
@@ -65,6 +77,7 @@ export function Hero() {
                 +91 7875122901
               </Button>
             </a>
+
             <a href="mailto:sumanttulshibagwale@gmail.com">
               <Button variant="outline" className="gap-2 glass-effect hover:bg-primary/10 hover:border-primary/30 transition-all">
                 <Mail className="w-4 h-4" />
@@ -73,6 +86,7 @@ export function Hero() {
             </a>
           </motion.div>
 
+          {/* Social Icons */}
           <motion.div
             className="flex flex-wrap justify-center gap-6 mb-12"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -87,6 +101,7 @@ export function Hero() {
             >
               <Linkedin className="w-5 h-5" />
             </a>
+
             <a
               href="https://github.com/Sumant26"
               target="_blank"
@@ -97,7 +112,9 @@ export function Hero() {
             </a>
           </motion.div>
 
+          {/* Action Buttons */}
           <motion.div
+            className="flex flex-col sm:flex-row justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1 }}
@@ -110,10 +127,21 @@ export function Hero() {
               View My Work
               <ArrowDown className="w-4 h-4" />
             </Button>
+
+            <Button
+              onClick={handleDownloadResume}
+              size="lg"
+              variant="outline"
+              className="gap-2 border-primary text-primary hover:bg-primary/10 transition-all"
+            >
+              <Download className="w-4 h-4" />
+              Download Resume
+            </Button>
           </motion.div>
         </motion.div>
       </div>
 
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <motion.div
           animate={{ y: [0, 8, 0] }}
