@@ -1,12 +1,11 @@
 import { motion } from "motion/react";
-import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { Briefcase, MapPin } from "lucide-react";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
 
 interface Job {
   company: string;
   role: string;
-  period: string;
   location: string;
   businessLogic?: string[];
   technicalContributions: string[];
@@ -17,7 +16,6 @@ const productExperience: Job[] = [
   {
     company: "Doshaheen",
     role: "Software Developer",
-    period: "Nov 2023 – Apr 2024",
     location: "Pune, India",
     businessLogic: [
       "Regulatory compliance document management with audit trails",
@@ -34,7 +32,6 @@ const productExperience: Job[] = [
   {
     company: "DentalDost",
     role: "Software Developer",
-    period: "Oct 2020 – Jul 2021",
     location: "Pune, India",
     businessLogic: [
       "Appointment booking, treatment records, and medical image management",
@@ -53,7 +50,6 @@ const serviceExperience: Job[] = [
   {
     company: "Ergobite",
     role: "Software Developer",
-    period: "Dec 2025 – Jun 2026",
     location: "Pune, India",
     businessLogic: [
       "End-to-end meal ordering and delivery lifecycle",
@@ -69,7 +65,6 @@ const serviceExperience: Job[] = [
   {
     company: "ScriptLanes",
     role: "Software Developer",
-    period: "Jul 2021 – Jul 2023",
     location: "Pune, India",
     technicalContributions: [
       "Built backend services using Node.js and ASP.NET Core",
@@ -81,7 +76,7 @@ const serviceExperience: Job[] = [
 ];
 
 export function WorkExperience() {
-  const renderJobCard = (job: Job, index: number, sectionIndex: number) => (
+  const renderJobCard = (job: Job, index: number) => (
     <motion.div
       key={index}
       initial={{ opacity: 0, y: 20 }}
@@ -90,9 +85,8 @@ export function WorkExperience() {
       transition={{ duration: 0.6, delay: index * 0.1 }}
     >
       <Card className="p-8 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 relative overflow-hidden group border-border/50 hover:border-primary/20 glass-effect">
-        {/* Decorative gradient */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        
+
         <div className="relative">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
             <div>
@@ -103,10 +97,6 @@ export function WorkExperience() {
               <p className="text-lg text-muted-foreground ml-5">{job.role}</p>
             </div>
             <div className="text-sm text-muted-foreground flex flex-col gap-2 md:text-right">
-              <div className="flex items-center gap-2 md:justify-end">
-                <Calendar className="w-4 h-4" />
-                {job.period}
-              </div>
               <div className="flex items-center gap-2 md:justify-end">
                 <MapPin className="w-4 h-4" />
                 {job.location}
@@ -160,11 +150,6 @@ export function WorkExperience() {
 
   return (
     <section id="experience" className="py-24 px-6 bg-gradient-to-b from-muted/30 via-background to-background relative">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/3 left-0 w-72 h-72 bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl" />
-      </div>
-
       <div className="max-w-6xl mx-auto relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -183,37 +168,17 @@ export function WorkExperience() {
             </p>
           </div>
 
-          {/* Product Experience Section */}
           <div className="mb-12">
-            <motion.h3 
-              className="text-2xl mb-6 flex items-center gap-3"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <div className="h-px flex-1 bg-gradient-to-r from-transparent to-primary/20" />
-              <span className="text-primary">Product Experience</span>
-              <div className="h-px flex-1 bg-gradient-to-l from-transparent to-primary/20" />
-            </motion.h3>
+            <h3 className="text-2xl mb-6 text-primary text-center">Product Experience</h3>
             <div className="space-y-8">
-              {productExperience.map((job, index) => renderJobCard(job, index, 0))}
+              {productExperience.map((job, index) => renderJobCard(job, index))}
             </div>
           </div>
 
-          {/* Service Experience Section */}
           <div>
-            <motion.h3 
-              className="text-2xl mb-6 flex items-center gap-3"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <div className="h-px flex-1 bg-gradient-to-r from-transparent to-primary/20" />
-              <span className="text-primary">Service Experience</span>
-              <div className="h-px flex-1 bg-gradient-to-l from-transparent to-primary/20" />
-            </motion.h3>
+            <h3 className="text-2xl mb-6 text-primary text-center">Service Experience</h3>
             <div className="space-y-8">
-              {serviceExperience.map((job, index) => renderJobCard(job, index, 1))}
+              {serviceExperience.map((job, index) => renderJobCard(job, index))}
             </div>
           </div>
         </motion.div>
