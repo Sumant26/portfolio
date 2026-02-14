@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, Globe, Heart } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Globe, Heart, Download } from "lucide-react";
 
 export function Footer() {
   return (
@@ -75,6 +75,7 @@ export function Footer() {
               </li>
             </ul>
 
+            {/* Social + Resume */}
             <div className="flex gap-4 mt-6">
               <a
                 href="https://linkedin.com/in/sumant-tulshibagwale"
@@ -84,6 +85,7 @@ export function Footer() {
               >
                 <Linkedin className="w-5 h-5" />
               </a>
+
               <a
                 href="https://github.com/Sumant26"
                 target="_blank"
@@ -91,6 +93,15 @@ export function Footer() {
                 className="p-2 bg-muted rounded-lg hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20 transition-all"
               >
                 <Github className="w-5 h-5" />
+              </a>
+
+              {/* Resume Download Button */}
+              <a
+                href="/Sumant_Tulshibagwale_Resume.pdf"   // Place resume in public folder
+                download
+                className="p-2 bg-muted rounded-lg hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20 transition-all"
+              >
+                <Download className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -105,23 +116,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  );
-}
-
-function MapPin({ className }: { className?: string }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-    >
-      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-      <circle cx="12" cy="10" r="3" />
-    </svg>
   );
 }
