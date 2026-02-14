@@ -1,5 +1,12 @@
 import { motion } from "motion/react";
-import { Mail, Phone, Linkedin, Github, ArrowDown, Download } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  Linkedin,
+  Github,
+  ArrowDown,
+  Download,
+} from "lucide-react";
 import { Button } from "./ui/button";
 
 export function Hero() {
@@ -12,7 +19,7 @@ export function Hero() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf"; // Make sure resume.pdf is inside /public
+    link.href = "/resume.pdf"; // MUST be inside public folder
     link.download = "Sumant_Tulshibagwale_Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -21,6 +28,7 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-background to-muted/30">
+
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -left-48 w-96 h-96 bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl" />
@@ -33,6 +41,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
+          {/* Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -46,6 +55,7 @@ export function Hero() {
             </div>
           </motion.div>
 
+          {/* Name */}
           <motion.h1
             className="text-5xl md:text-7xl mb-6 gradient-text"
             initial={{ opacity: 0, y: 30 }}
@@ -55,13 +65,15 @@ export function Hero() {
             Sumant Tulshibagwale
           </motion.h1>
 
+          {/* Description */}
           <motion.p
             className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            5+ years building scalable mobile applications and backend systems using Flutter, Node.js, and MongoDB
+            5+ years building scalable mobile applications and backend systems
+            using Flutter, Node.js, and MongoDB
           </motion.p>
 
           {/* Contact Buttons */}
@@ -72,18 +84,33 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <a href="tel:+917875122901">
-              <Button variant="outline" className="gap-2 glass-effect hover:bg-primary/10 hover:border-primary/30 transition-all">
+              <Button
+                variant="outline"
+                className="gap-2 glass-effect hover:bg-primary/10 hover:border-primary/30 transition-all"
+              >
                 <Phone className="w-4 h-4" />
                 +91 7875122901
               </Button>
             </a>
 
             <a href="mailto:sumanttulshibagwale@gmail.com">
-              <Button variant="outline" className="gap-2 glass-effect hover:bg-primary/10 hover:border-primary/30 transition-all">
+              <Button
+                variant="outline"
+                className="gap-2 glass-effect hover:bg-primary/10 hover:border-primary/30 transition-all"
+              >
                 <Mail className="w-4 h-4" />
                 Email
               </Button>
             </a>
+
+            <Button
+              onClick={handleDownloadResume}
+              variant="outline"
+              className="gap-2 glass-effect hover:bg-primary/10 hover:border-primary/30 transition-all"
+            >
+              <Download className="w-4 h-4" />
+              Resume
+            </Button>
           </motion.div>
 
           {/* Social Icons */}
@@ -112,9 +139,8 @@ export function Hero() {
             </a>
           </motion.div>
 
-          {/* Action Buttons */}
+          {/* View Work Button */}
           <motion.div
-            className="flex flex-col sm:flex-row justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1 }}
@@ -122,20 +148,9 @@ export function Hero() {
             <Button
               onClick={() => scrollToSection("experience")}
               size="lg"
-              className="gap-2 bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all"
+              className="bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all"
             >
               View My Work
-              <ArrowDown className="w-4 h-4" />
-            </Button>
-
-            <Button
-              onClick={handleDownloadResume}
-              size="lg"
-              variant="outline"
-              className="gap-2 border-primary text-primary hover:bg-primary/10 transition-all"
-            >
-              <Download className="w-4 h-4" />
-              Download Resume
             </Button>
           </motion.div>
         </motion.div>
