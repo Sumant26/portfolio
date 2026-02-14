@@ -39,7 +39,7 @@ export function Education() {
               <Card className="p-8 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 border-border/50 hover:border-primary/20 glass-effect group relative overflow-hidden">
                 {/* Decorative gradient */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
+
                 <div className="relative">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="p-4 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors">
@@ -61,7 +61,6 @@ export function Education() {
                   <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-primary" />
-                      <span>Graduated May 2020</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4 text-primary" />
