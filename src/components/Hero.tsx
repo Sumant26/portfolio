@@ -57,7 +57,8 @@ export function Hero() {
 
           {/* Name */}
           <motion.h1
-            className="text-5xl md:text-7xl mb-6 gradient-text"
+            className="text-5xl md:text-7xl mb-6 gradient-text pb-12 leading-normal"
+            style={{ overflow: "visible" }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
